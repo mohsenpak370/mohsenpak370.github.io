@@ -54,3 +54,36 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0 solid #fff}";
         document.body.appendChild(css);
     };
+    // ***** Nightmode *****
+    let i = 0;
+    let x;
+    function change(id){
+    if(i===0) {
+       i++; id=document.getElementsByClassName ("section");
+       id[0].style.backgroundColor = "#fefefe";
+       id[1].style.backgroundColor = "#fefefe";
+       id[2].style.backgroundColor = "#fefefe";
+       id=document.getElementById("contacts").style.backgroundColor = "#fefefe";
+       id=document.getElementsByTagName ("body")[0].style.backgroundColor = "hsla(240, 100%, 95%, 1)";
+
+    id=document.getElementsByClassName("section");
+       id[0].style.color = "hsla(240, 90%, 25%, 1)";
+       id[1].style.color = "hsla(240, 90%, 25%, 1)";
+       id[2].style.color = "hsla(240, 90%, 25%, 1)";
+       id=document.getElementById("contacts").style.color = "hsla(240, 90%, 25%, 1)";
+
+    } else {
+       i--; id=document.getElementsByClassName("section");
+       id[0].style.backgroundColor = "#333";
+       id[1].style.backgroundColor = "#333";
+       id[2].style.backgroundColor = "#333";
+       id=document.getElementById("contacts").style.backgroundColor = "#333";
+       id=document.getElementsByTagName ("body")[0].style.backgroundColor = "hsla(240, 0%, 14%, 1)";
+
+    id=document.getElementsByClassName("section");
+    id[0].style.color = "#FFF";
+    id[1].style.color = "#FFF";
+    id[2].style.color = "#FFF";
+    id=document.getElementById("contacts").style.color = "#fff";
+    }
+    }
