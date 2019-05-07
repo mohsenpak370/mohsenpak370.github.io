@@ -92,6 +92,7 @@ nav:hover .menu li:nth-child(3) {
 }
 nav:hover .menu li:nth-child(4) {
     animation: menulast 1000ms 400ms ease-out forwards;
+    transition: all 4s ease-out;
 }
 
 @keyframes menu {
