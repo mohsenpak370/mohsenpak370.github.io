@@ -1,2 +1,5 @@
-a test text to work with git
-testing to see how the changes would apear in git
+a test text to work with git;
+
+testing to see how the changes would apear in git;
+A test to see how we can undo the changes;
+
