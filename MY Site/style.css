@@ -17,6 +17,95 @@ body {
 .ps {
   font-size: 15px;
 }
+/* ========== navbar ========== */
+nav{
+    text-align:center;
+    text-transform:uppercase;
+    height:65px;
+    line-height:65px;
+    position:relative;
+    font-size:19px;
+    font-weight:bold;
+    color:#FFF;
+    background-color:hsla(240, 0%, 17%, 1);
+    cursor:pointer;
+}
+
+nav ul{
+    list-style:none;
+    text-transform:capitalize;
+    padding:0;
+    margin:0;
+    display:block ;
+    position:absolute;
+    z-index:5;
+    width:100%;
+}
+
+nav:hover {
+    background:hsla(240, 0%, 14%, 1);
+}
+
+.menu li{
+    background-color:hsla(240, 0%, 17%, 1);
+    color:#FFF;
+    border:1px solid black;
+    height:65px;
+    line-height:65px;
+    position:relative;
+    font-size:19px;
+    cursor:pointer;
+    display:none;
+    padding:0;
+    margin:0;
+}
+.menu li a {
+    text-decoration:none;
+    color:#FFF;
+    font-weight:bold;
+    display:block;
+}
+.menu li:hover{
+    background:hsla(240, 0%, 14%, 1);
+}
+.menu li:last-child{
+    border-radius:0px 0px 5px 5px;
+}
+
+nav:hover .menu{
+    perspective:1000px;
+}
+nav:hover .menu li{
+    display:block;
+    opacity:0;
+    transform-origin: top center;
+    z-index:5;
+}
+nav:hover .menu li:nth-child(1) {
+    animation: menu 300ms 100ms ease-in-out forwards;
+}
+nav:hover .menu li:nth-child(2) {
+    animation: menu 300ms 200ms ease-in-out forwards;
+}
+nav:hover .menu li:nth-child(3) {
+    animation: menu 300ms 300ms ease-in-out forwards;
+}
+nav:hover .menu li:nth-child(4) {
+    animation: menulast 1000ms 400ms ease-out forwards;
+}
+
+@keyframes menu {
+    0% {opacity:0; transform:rotatex(-70deg);}
+    100% {opacity:.99; }
+}
+@keyframes menulast {
+    0% {opacity:0; transform:rotatex(-70deg);}
+    60% {opacity:0.95; transform:rotatex(20deg);}
+    90% {opacity:0.99; transform:rotatex(-5deg);}
+    100% {opacity:.99; }
+}
+/* ========== nav End ========== */
+
 /* ========== header ========== */
 header:before {
     content:" ";
@@ -138,7 +227,7 @@ progress::-moz-progress-bar {
     width: 28px;
     height: 28px;
     content: "";
-    background-color: hsla(240, 0%, 25%, 1);
+    background-color: inherit;
     left: 15%;
     top: 92%;
     transform: rotate(45deg);
@@ -174,6 +263,11 @@ progress::-moz-progress-bar {
 }
 #contacts span {
   margin-bottom: 10px;
+}
+
+.nightmode {
+  float: right;
+  padding-right: 10px;
 }
 
 .copyright {
