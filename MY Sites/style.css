@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Handlee', cursive, sans-serif;
+    font-size: 13pt;
+    background-color: hsla(240, 0%, 14%, 1);
+    padding: 0;
+    margin: 0;
+    color: hsla(240, 100%, 99%, 1);
+}
+.pc, .hid {
+  display: none;
+}
+.ps {
+  font-size: 15px;
+}
+/* ========== header ========== */
+header:before {
+    content:" ";
+    background-image: url("images/bg.jpg");
+    position:absolute;
+    background-size: cover;
+    background-position:center;
+    min-height:320px;
+    width:100%;
+    z-index:-1;
+    filter:blur(1px) brightness(50%);
+}
+header {
+    overflow:hidden;
+    min-height: 320px;
+}
+.img-circle {
+    border-radius: 50%;
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 30px auto;
+    border: 3px solid hsla(240, 20%, 35%, 1);
+}
+header h1 a {
+  text-decoration: none;
+  color: hsla(240, 20%, 99%, 1);
+  font-size: 34px;
+  margin-top: 20px;
+}
+/*  =========== sections ============ */
+h1 {
+    font-size: 15pt;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+p {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    text-indent: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.section {
+    background-color: hsla(240, 0%, 25%, 1);
+    padding: 25px;
+    margin: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.section:hover {
+  position: relative;
+  top: -3px;
+  left: -3px;
+  box-shadow: 5px 5px 10px hsla(240, 0%, 0%, 1);
+}
+.skills:after {
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    top: -0.5%;
+    left: 85%;
+    border-top: solid #a00 3rem;
+    border-right: solid #a00 1rem;
+    border-left: solid #a00 1rem;
+    border-bottom: solid transparent 1.5rem;
+    filter: drop-shadow(3px 3px 3px hsla(240, 0%, 0%, 1));
+    border-radius:1.8px 1.8px 0 0;
+}
+li {
+    margin-bottom: 15px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+progress {
+    width: 80%;
+    height: 20px;
+    color: linear-gradient(45deg, #00f000,#459905);
+    background-color: #efefef;
+    border-radius: 5px;
+    border: 2px solid hsla(240, 20%, 95%, 1);
+}
+progress:hover {
+    width: 82%;
+    height: 22px;
+    box-shadow: 3px 3px 5px hsla(240, 20%, 5%, 1);
+}
+progress::-webkit-progress-bar {
+    background: #dfdfdf;
+    border-radius: 5px;
+}
+progress::-webkit-progress-value {
+    background:linear-gradient(45deg, #00f000,#459905);
+    border-radius: 5px 0 0 5px;
+}
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+    border-radius: 5px;
+}
+.works {
+  text-align: center;
+}
+#contacts {
+    position: relative;
+    background-color: hsla(240, 0%, 25%, 1);
+    padding: 25px;
+    margin: 15px;
+    border-radius: 10px;
+}
+#contacts:after {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    content: "";
+    background-color: hsla(240, 0%, 25%, 1);
+    left: 15%;
+    top: 92%;
+    transform: rotate(45deg);
+}
+#contacts:hover {
+    filter: drop-shadow(5px 5px 3px hsla(240, 0%, 0%, 1));
+    position: relative;
+    top: -3px;
+    left: -3px;
+}
+#contacts img {
+    height: 60px;
+    width: 60px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#contacts a {
+    text-decoration: none;
+}
+#contacts img:hover {
+    height: 63px;
+    width: 63px;
+    position: relative;
+    top: -2px;
+    left: -2px;
+    filter: drop-shadow(5px 5px 3px hsla(240, 0%, 0%, 1));
+}
+#contacts {
+    text-align: center;
+}
+#contacts ul {
+  list-style: none;
+}
+#contacts span {
+  margin-bottom: 10px;
+}
+
+.copyright {
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+    color: grey;
+}
+.copyright p {
+    padding-top: 12px;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    font-size: 1.2rem;
+  }
+  .pc {
+    display: inherit;
+  }
+  header, header:before {
+    min-height: 700px;
+  }
+  .img-circle {
+      margin-top: 130px;
+  }
+  header h1  {
+      margin-top: 50px;
+  }
+  .img-circle {
+      border-radius: 50%;
+      display: block;
+      width: 200px;
+      height: 200px;
+      margin: 140px auto;
+      border: 3px solid hsla(240, 20%, 35%, 1);
+  }
+  .main {
+      width: 65%;
+      display:inline-block;
+      margin-right: 0;
+      margin-left: 20px;
+  }
+  .sticky {
+      width:30%;
+      position:sticky;
+      display:inline-block;
+      float:right;
+      margin-left: 0;
+      margin-top: 0;
+      top:15px;
+  }
+}
