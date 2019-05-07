@@ -1,1 +1,2 @@
 a test text to work with git
+testing to see how the changes would apear in git
