@@ -29,6 +29,7 @@ nav{
     color:#FFF;
     background-color:hsla(240, 0%, 17%, 1);
     cursor:pointer;
+    border-bottom: 1px solid black;
 }
 
 nav ul{
@@ -50,14 +51,16 @@ nav:hover {
     background-color:hsla(240, 0%, 17%, 1);
     color:#FFF;
     border:1px solid black;
-    height:65px;
-    line-height:65px;
+    border-top: 0;
+    height:59px;
+    line-height:59px;
     position:relative;
     font-size:19px;
     cursor:pointer;
     display:none;
     padding:0;
-    margin:0;
+    margin:0 auto;
+    width: 98%;
 }
 .menu li a {
     text-decoration:none;
@@ -83,21 +86,28 @@ nav:hover .menu li{
     z-index:5;
 }
 nav:hover .menu li:nth-child(1) {
-    animation: menu 300ms 100ms ease-in-out forwards;
+    animation: menu 300ms 120ms ease-in-out forwards;
 }
 nav:hover .menu li:nth-child(2) {
-    animation: menu 300ms 200ms ease-in-out forwards;
+    animation: menu 300ms 240ms ease-in-out forwards;
 }
 nav:hover .menu li:nth-child(3) {
-    animation: menu 300ms 300ms ease-in-out forwards;
+    animation: menu 300ms 360ms ease-in-out forwards;
 }
 nav:hover .menu li:nth-child(4) {
-    animation: menu 300ms 400ms ease-out forwards;
+    animation: menulast 1000ms 500ms ease-out forwards;
 }
 
 @keyframes menu {
     0% {opacity:0; transform:rotatex(-70deg);}
     100% {opacity:.99; transform:rotatex(0deg)}
+}
+@keyframes menulast {
+    0% {opacity:0; transform:rotatex(-70deg);}
+    10%{opacity: 0.99; transform: rotateX(-30deg);}
+    55% {opacity:0.99; transform:rotatex(20deg);}
+    80% {opacity:0.99; transform:rotatex(-15deg);}
+    100% {opacity:.99; transform:rotatex(0deg);}
 }
 /* ========== nav End ========== */
 
@@ -185,9 +195,9 @@ progress {
     width: 80%;
     height: 20px;
     color: linear-gradient(45deg, #00f000,#459905);
-    background-color: #efefef;
+    background-color: hsla(240, 20%, 85%, 1);
     border-radius: 5px;
-    border: 2px solid hsla(240, 20%, 95%, 1);
+    border: 2px solid hsla(240, 20%, 85%, 1);
 }
 progress:hover {
     width: 82%;
@@ -228,7 +238,7 @@ progress::-moz-progress-bar {
     transform: rotate(45deg);
 }
 #contacts:hover {
-    filter: drop-shadow(5px 5px 3px hsla(240, 0%, 0%, 1));
+    filter: drop-shadow(4px 4px 5px hsla(240, 0%, 0%, 1));
     position: relative;
     top: -3px;
     left: -3px;
@@ -262,17 +272,15 @@ progress::-moz-progress-bar {
 
 .nightmode {
   float: right;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
-.copyright {
+footer {
     font-size: 18px;
     text-align: left;
     padding: 10px;
-    color: grey;
-}
-.copyright p {
-    padding-top: 12px;
+    padding-top: 20px;
+    color: hsla(240, 0%, 40%, 1);
 }
 
 @media only screen and (min-width: 700px) {

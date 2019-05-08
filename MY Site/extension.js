@@ -59,14 +59,16 @@ var TxtType = function(el, toRotate, period) {
     let x;
     function change(id){
     if(i===0) {
-       i++; id=document.getElementsByClassName ("section");
-       id[0].style.backgroundColor = "#fefefe";
-       id[1].style.backgroundColor = "#fefefe";
-       id[2].style.backgroundColor = "#fefefe";
-       id=document.getElementById("contacts").style.backgroundColor = "#fefefe";
-       id=document.getElementsByTagName ("body")[0].style.backgroundColor = "hsla(240, 100%, 95%, 1)";
+       i++;
+       id=document.getElementsByClassName ("section");
+       id[0].style.backgroundColor = "hsla(240, 20%, 95%, 1)";
+       id[1].style.backgroundColor = "hsla(240, 20%, 95%, 1)";
+       id[2].style.backgroundColor = "hsla(240, 20%, 95%, 1)";
+       id=document.getElementById("contacts").style.backgroundColor = "hsla(240, 20%, 95%, 1)";
+       id=document.getElementsByClassName ("img-circle")[0].style.filter = "brightness(100%)";
+       id=document.getElementsByTagName ("body")[0].style.backgroundColor = "hsla(240, 100%, 90%, 1)";
 
-    id=document.getElementsByClassName("section");
+       id=document.getElementsByClassName("section");
        id[0].style.color = "hsla(240, 90%, 25%, 1)";
        id[1].style.color = "hsla(240, 90%, 25%, 1)";
        id[2].style.color = "hsla(240, 90%, 25%, 1)";
@@ -74,10 +76,10 @@ var TxtType = function(el, toRotate, period) {
 
     } else {
        i--; id=document.getElementsByClassName("section");
-       id[0].style.backgroundColor = "#333";
-       id[1].style.backgroundColor = "#333";
-       id[2].style.backgroundColor = "#333";
-       id=document.getElementById("contacts").style.backgroundColor = "#333";
+       id[0].style.backgroundColor = "hsla(240, 0%, 25%, 1)";
+       id[1].style.backgroundColor = "hsla(240, 0%, 25%, 1)";
+       id[2].style.backgroundColor = "hsla(240, 0%, 25%, 1)";
+       id=document.getElementById("contacts").style.backgroundColor = "hsla(240, 0%, 25%, 1)";
        id=document.getElementsByTagName ("body")[0].style.backgroundColor = "hsla(240, 0%, 14%, 1)";
 
     id=document.getElementsByClassName("section");
