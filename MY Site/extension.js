@@ -55,37 +55,29 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
     // ***** Nightmode *****
-    let i = 0;
-    let x;
-    function change(id){
-    if(i===0) {
-       i++;
-       id=document.getElementsByClassName ("section");
-       id[0].style.backgroundColor = "hsla(240, 20%, 95%, 1)";
-       id[1].style.backgroundColor = "hsla(240, 20%, 95%, 1)";
-       id[2].style.backgroundColor = "hsla(240, 20%, 95%, 1)";
-       id=document.getElementById("contacts").style.backgroundColor = "hsla(240, 20%, 95%, 1)";
-       id=document.getElementsByClassName ("img-circle")[0].style.filter = "brightness(100%)";
-       id=document.getElementsByTagName ("body")[0].style.backgroundColor = "hsla(240, 100%, 90%, 1)";
+    $(function(){
+var isOn = 1;
 
-       id=document.getElementsByClassName("section");
-       id[0].style.color = "hsla(240, 90%, 25%, 1)";
-       id[1].style.color = "hsla(240, 90%, 25%, 1)";
-       id[2].style.color = "hsla(240, 90%, 25%, 1)";
-       id=document.getElementById("contacts").style.color = "hsla(240, 90%, 25%, 1)";
-
-    } else {
-       i--; id=document.getElementsByClassName("section");
-       id[0].style.backgroundColor = "hsla(240, 0%, 25%, 1)";
-       id[1].style.backgroundColor = "hsla(240, 0%, 25%, 1)";
-       id[2].style.backgroundColor = "hsla(240, 0%, 25%, 1)";
-       id=document.getElementById("contacts").style.backgroundColor = "hsla(240, 0%, 25%, 1)";
-       id=document.getElementsByTagName ("body")[0].style.backgroundColor = "hsla(240, 0%, 14%, 1)";
-
-    id=document.getElementsByClassName("section");
-    id[0].style.color = "#FFF";
-    id[1].style.color = "#FFF";
-    id[2].style.color = "#FFF";
-    id=document.getElementById("contacts").style.color = "#fff";
+$(".switch").click(function () {
+    if (isOn) {
+        $(".handle").css("transform","translateX(20px)");
+        $(".handle").css("background-color", "yellow");
+        $(".switch").css("background-color","#46A0F6");
+        $("body").css("background-color","hsla(240, 100%, 90%, 1)");
+        $(".section").css({"backgroundColor": "hsla(240, 20%, 95%, 1)", "color": "hsla(240, 90%, 25%, 1)"});
+        $("#contacts").css({"backgroundColor": "hsla(240, 20%, 95%, 1)", "color": "hsla(240, 90%, 25%, 1)"});
+        $(".circle").removeClass("selectedd");
+        isOn = 0;
+    }else{
+        $(".handle").css("transform","translateX(0px)");
+        $(".switch").css("background-color","#4D30AE");
+        $(".handle").css("background-color", "white");
+        $("body").css("background-color","hsla(240, 0%, 14%, 1)");
+        $(".section").css({"backgroundColor": "hsla(240, 0%, 25%, 1)", "color": "hsla(240, 100%, 99%, 1)"});
+        $("#contacts").css({"backgroundColor": "hsla(240, 0%, 25%, 1)", "color": "hsla(240, 100%, 99%, 1)"});
+        $(".circle").addClass("selectedd");
+        isOn = 1;
     }
-    }
+});
+
+});

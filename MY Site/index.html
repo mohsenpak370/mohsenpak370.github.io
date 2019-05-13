@@ -28,6 +28,11 @@
         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
         <link href="./images/logo.jpg" rel="icon"/>
+        <!-- ===== jQuery ===== -->
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
         <script src="extension.js" defer></script>
     </head>
     <body>
@@ -136,8 +141,13 @@
       </div>
         <!-- Contacts section end -->
         <footer class="copyright">
-          <p class="nightmode">Nightmode <input type="checkbox" id="b" checked onclick = "change(this);"></p>
-          <p>  &copy; Mo3n.com -  2019  </p>
+          <div class="switch">
+              <div class="handle">
+                  <div class="circle selectedd "></div>
+              </div>
+          </div>
+          <p>  &copy; Mo3n.com -  2019 </p>
+
         </footer>
 
     </body>
