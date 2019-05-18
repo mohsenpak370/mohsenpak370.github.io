@@ -21,9 +21,8 @@ body {
 /* ========== navbar ========== */
 nav{
     text-align:center;
-    text-transform:uppercase;
-    height:65px;
-    line-height:65px;
+    height:59px;
+    line-height:59px;
     position:relative;
     font-size:19px;
     font-weight:bold;
@@ -32,7 +31,10 @@ nav{
     cursor:pointer;
     border-bottom: 1px solid black;
 }
-
+nav p {
+  text-align:center;
+  text-transform:uppercase;
+}
 nav ul{
     list-style:none;
     text-transform:capitalize;
@@ -40,12 +42,7 @@ nav ul{
     margin:0;
     display:block ;
     position:absolute;
-    z-index:5;
     width:100%;
-}
-
-nav:hover {
-    background:hsla(240, 0%, 14%, 1);
 }
 
 .menu li{
@@ -72,44 +69,6 @@ nav:hover {
 .menu li:hover{
     background:hsla(240, 0%, 14%, 1);
 }
-.menu li:last-child{
-    border-radius:0px 0px 5px 5px;
-}
-
-nav:hover .menu{
-    perspective:1000px;
-}
-nav:hover .menu li{
-    display:block;
-    opacity:0;
-    transform-origin: top center;
-    transition: all 1s ease-out;
-    z-index:5;
-}
-nav:hover .menu li:nth-child(1) {
-    animation: menu 300ms 120ms ease-in-out forwards;
-}
-nav:hover .menu li:nth-child(2) {
-    animation: menu 300ms 240ms ease-in-out forwards;
-}
-nav:hover .menu li:nth-child(3) {
-    animation: menu 300ms 360ms ease-in-out forwards;
-}
-nav:hover .menu li:nth-child(4) {
-    animation: menulast 1000ms 500ms ease-out forwards;
-}
-
-@keyframes menu {
-    0% {opacity:0; transform:rotatex(-70deg);}
-    100% {opacity:.99; transform:rotatex(0deg)}
-}
-@keyframes menulast {
-    0% {opacity:0; transform:rotatex(-70deg);}
-    10%{opacity: 0.99; transform: rotateX(-30deg);}
-    55% {opacity:0.99; transform:rotatex(20deg);}
-    80% {opacity:0.99; transform:rotatex(-15deg);}
-    100% {opacity:.99; transform:rotatex(0deg);}
-}
 /* ========== nav End ========== */
 
 /* ========== header ========== */
@@ -118,29 +77,28 @@ header:before {
     background-image: url("images/bg.jpg");
     position:absolute;
     background-size: cover;
-    background-position:center;
-    min-height:320px;
+    background-position:top;
+    min-height:390px;
     width:100%;
     z-index:-1;
     filter: brightness(50%) blur(1px);
 }
 header {
     overflow:hidden;
-    min-height: 320px;
+    min-height: 390px;
 }
 .img-circle {
     border-radius: 50%;
     display: block;
     width: 160px;
     height: 160px;
-    margin: 30px auto;
+    margin: 35px auto;
     border: 3px solid hsla(240, 20%, 35%, 1);
 }
 header h1 a {
   text-decoration: none;
   color: hsla(240, 20%, 99%, 1);
   font-size: 34px;
-  margin-top: 20px;
 }
 /*  =========== sections ============ */
 h1 {
@@ -318,12 +276,51 @@ footer {
 
 }
 
-.selectedd{
+.selectedd {
     transform: translate(-5px,-5px);
     background-color: #4D30AE ;
 
 }
 
+@media only screen and (max-width: 700px) {
+  nav:hover {
+      background:hsla(240, 0%, 14%, 1);
+  }
+  nav:hover .menu{
+      perspective:1000px;
+  }
+  nav:hover .menu li{
+      display:block;
+      opacity:0;
+      transform-origin: top center;
+  }
+  .menu li:last-child{
+      border-radius:0px 0px 5px 5px;
+  }
+  nav:hover .menu li:nth-child(1) {
+      animation: menu 300ms 120ms ease-in-out forwards;
+  }
+  nav:hover .menu li:nth-child(2) {
+      animation: menu 300ms 240ms ease-in-out forwards;
+  }
+  nav:hover .menu li:nth-child(3) {
+      animation: menu 300ms 360ms ease-in-out forwards;
+  }
+  nav:hover .menu li:nth-child(4) {
+      animation: menulast 1000ms 500ms ease-out forwards;
+  }
+  @keyframes menu {
+      0% {opacity:0; transform:rotatex(-70deg);}
+      100% {opacity:.99; transform:rotatex(0deg)}
+  }
+  @keyframes menulast {
+      0% {opacity:0; transform:rotatex(-70deg);}
+      10%{opacity: 0.99; transform: rotateX(-30deg);}
+      55% {opacity:0.99; transform:rotatex(20deg);}
+      80% {opacity:0.99; transform:rotatex(-15deg);}
+      100% {opacity:.99; transform:rotatex(0deg);}
+  }
+}
 
 @media only screen and (min-width: 700px) {
   body {
@@ -334,6 +331,36 @@ footer {
   }
   header, header:before {
     min-height: 700px;
+  }
+  nav {
+    background-color:hsla(240, 0%, 17%, 0.3);
+    border: none;
+    position: relative;
+    top: 20px;
+    cursor: inherit;
+  }
+  nav img {
+    height: 90px;
+    float: left;
+    border-radius: 5px;
+    position: absolute;
+    left: 5px;
+    top: -10px;
+  }
+  nav p {
+    display: none;
+  }
+  nav .menu li {
+    display: inline-block;
+    width: 120px;
+    float: left;
+    position: relative;
+    left: 110px;
+    background-color: inherit;
+    border: inherit;
+  }
+  nav .menu li:hover {
+    border-bottom: 2px solid #fff;
   }
   .img-circle {
       margin-top: 130px;
