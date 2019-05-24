@@ -1095,7 +1095,8 @@ footer ul li a:hover {
 .copy p {
     color: #fff;
     line-height: 100px;
-    line-height: 100px
+    padding-bottom: 0px;
+    font-size: 14px;
 }
 
 .copy a {
