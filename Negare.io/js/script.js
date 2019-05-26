@@ -8,7 +8,7 @@ $(function() {
         } else {
             $('.navbar-fixed-top').removeClass('top-nav');
           /*  $('.logo').html("<img class='navbar-brand' src='img/logo/logo.png' alt='logo'>"); */
-            $('.navbar-brand').css('height', '60px');
+            $('.navbar-brand').css('height', '55px');
         }
     });
     $('.collapsed').on('click', function() {
