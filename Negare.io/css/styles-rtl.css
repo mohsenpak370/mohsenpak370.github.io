@@ -5,10 +5,10 @@
          url('http://fonts.codearena.ir/rastikerdar/samim/samim.woff') format('woff'),
          url('http://fonts.codearena.ir/rastikerdar/samim/samim.ttf') format('truetype');
     font-weight: normal;
-  } 
+  }
 html,
 body {
-    font-family: 'Samim', serif;
+    font-family: 'Shabnam', 'Samim', serif;
 }
 
 h3 {
@@ -19,7 +19,7 @@ h3 {
 .form-submit {
     background-image: -moz-linear-gradient(-180deg, #77ecdb 0, #1cb2d3 100%);
     background-image: -webkit-linear-gradient(-180deg, #77ecdb 0, #1cb2d3 100%);
-    background-image: -ms-linear-gradient(-180deg, #77ecdb 0, #1cb2d3 100%)
+    background-image: -ms-linear-gradient(-180deg, #77ecdb 0, #1cb2d3 100%);
 }
 
 .btn-main:hover,
