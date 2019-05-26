@@ -3,11 +3,9 @@ $(function() {
     $(window).scroll(function() {
         if ($('.navbar').offset().top > 50) {
             $('.navbar-fixed-top').addClass('top-nav');
-          /*  $('.logo').html("<img class='navbar-brand' src='img/logo/logo-top.png' alt='logo'>"); */
             $('.navbar-brand').css('height', '50px');
         } else {
             $('.navbar-fixed-top').removeClass('top-nav');
-          /*  $('.logo').html("<img class='navbar-brand' src='img/logo/logo.png' alt='logo'>"); */
             $('.navbar-brand').css('height', '55px');
         }
     });

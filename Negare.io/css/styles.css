@@ -15,7 +15,7 @@ h2,
 h3 {
     color: #3d3e3e;
     margin: 0 0 25px 0;
-    line-height: 1.5
+    line-height: 1.7
 }
 
 h1 {
@@ -36,6 +36,7 @@ h3 {
 p {
     margin: 0;
     font-size: 18px;
+    line-height: 1.7;
     text-align: justify;
     text-indent: 10px;
     -webkit-transition: all .3s ease-in-out;
@@ -144,6 +145,10 @@ header {
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
+}
+
+.top-nav .container #menu ul li a:hover {
+    color: #3b5998;
 }
 
 .navbar-default {
@@ -264,7 +269,7 @@ header {
 .navbar-default .navbar-nav>.active>a:before,
 .top-nav .navbar-nav>li>a:hover:before,
 .top-nav .navbar-nav>.active>a:before {
-    width: 100%
+    width: 100%;
 }
 
 .navbar-default .navbar-nav>li>a.sign-up {
