@@ -97,5 +97,4 @@ $(function() {
         };
     }
     var accordion = new Accordion($('.accordion-list'), false);
-    AOS.init();
 });

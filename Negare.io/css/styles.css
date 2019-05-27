@@ -3,8 +3,7 @@ body {
     height: 100%;
     width: 100%;
     font-size: 14px;
-    line-height: 1.5;
-    font-family: Roboto;
+    line-height: 1.3;
     color: #748181;
     background: #fff;
     position: relative
@@ -15,7 +14,7 @@ h2,
 h3 {
     color: #3d3e3e;
     margin: 0 0 25px 0;
-    line-height: 1.7
+    line-height: 1.7;
 }
 
 h1 {
@@ -127,7 +126,7 @@ ul li {
 
 header {
     position: relative;
-    min-height: 1080px
+    min-height: 1080px;
 }
 
 .title {
@@ -280,17 +279,18 @@ header {
     line-height: 40px;
     text-align: center;
     border-radius: 25px;
-    background-image: -moz-linear-gradient(-180deg, #fea4a4 0, #f7c5c6 100%);
-    background-image: -webkit-linear-gradient(-180deg, #fea4a4 0, #f7c5c6 100%);
-    background-image: -ms-linear-gradient(-180deg, #fea4a4 0, #f7c5c6 100%);
+    background-image: -moz-linear-gradient(-180deg, #ff3500 0, #ff9000 100%);
+    background-image: -webkit-linear-gradient(-180deg, #ff3500 0, #ff9000 100%);
+    background-image: -ms-linear-gradient(-180deg, #ff3500 0, #ff9000 100%);
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.18);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.18)
 }
 
 .navbar-default .navbar-nav>li>a.sign-up:hover {
-    background-image: -moz-linear-gradient(-180deg, #f7c5c6 0, #fea4a4 100%);
-    background-image: -webkit-linear-gradient(-180deg, #f7c5c6 0, #fea4a4 100%);
-    background-image: -ms-linear-gradient(-180deg, #f7c5c6 0, #fea4a4 100%)
+    color: #fff !important;
+    background-image: -moz-linear-gradient(-180deg, #ff9000 0, #ff3500 100%);
+    background-image: -webkit-linear-gradient(-180deg, #ff9000 0, #ff3500 100%);
+    background-image: -ms-linear-gradient(-180deg, #ff9000 0, #ff3500 100%)
 }
 
 .navbar-default .navbar-nav>li>a.sign-up:before {
@@ -765,21 +765,21 @@ header {
 
 .item-pricing.advanced .btn-main:hover {
     color: #fff;
-    background-image: -moz-linear-gradient(-180deg, #1cb2d3 0, #77ecdb 100%);
-    background-image: -webkit-linear-gradient(-180deg, #1cb2d3 0, #77ecdb 100%);
-    background-image: -ms-linear-gradient(-180deg, #1cb2d3 0, #77ecdb 100%)
+    background-image: -moz-linear-gradient(-180deg, #8282e6 0, #a2a5f4 100%);
+    background-image: -webkit-linear-gradient(-180deg, #8282e6 0, #a2a5f4 100%);
+    background-image: -ms-linear-gradient(-180deg, #8282e6 0, #a2a5f4 100%)
 }
 
 .item-pricing.premium .btn-main {
-    color: #fea4a4;
-    border-color: #fea4a4
+    color: #ff3500;
+    border-color: #f
 }
 
 .item-pricing.premium .btn-main:hover {
     color: #fff;
-    background-image: -moz-linear-gradient(-180deg, #fea4a4 0, #f7c5c6 100%);
-    background-image: -webkit-linear-gradient(-180deg, #fea4a4 0, #f7c5c6 100%);
-    background-image: -ms-linear-gradient(-180deg, #fea4a4 0, #f7c5c6 100%)
+    background-image: -moz-linear-gradient(-180deg, #ff3500 0, #ff9000 100%);
+    background-image: -webkit-linear-gradient(-180deg, #ff3500 0, #ff9000 100%);
+    background-image: -ms-linear-gradient(-180deg, #ff3500 0, #ff9000 100%)
 }
 
 .download {
