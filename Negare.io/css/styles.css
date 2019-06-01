@@ -520,7 +520,7 @@ header {
 
 .about-text {
     padding-left: 40px;
-    padding-top: 13vh
+    padding-top: 13vh;
 }
 
 .p-first {
@@ -533,7 +533,7 @@ header {
 }
 
 .mock-section img {
-    width: 100%
+    width: 100%;
 }
 
 .mock-float {
@@ -772,7 +772,7 @@ header {
 
 .item-pricing.premium .btn-main {
     color: #ff3500;
-    border-color: #f
+    border-color: #ff3500;
 }
 
 .item-pricing.premium .btn-main:hover {
@@ -801,12 +801,15 @@ header {
     color: #fff
 }
 
-.download-badge {
-    margin-top: 40px
+.download-left .button .btn-main {
+    background-image: -moz-linear-gradient(-180deg, #ff3500 0, #ff9000 100%);
+    background-image: -webkit-linear-gradient(-180deg, #ff3500 0, #ff9000 100%);
+    background-image: -ms-linear-gradient(-180deg, #ff3500 0, #ff9000 100%);
 }
-
-.download-badge a.store {
-    margin-right: 30px
+.download-left .button .btn-main:hover {
+    background-image: -moz-linear-gradient(-180deg, #ff9000 0, #ff3500 100%);
+    background-image: -webkit-linear-gradient(-180deg, #ff9000 0, #ff3500 100%);
+    background-image: -ms-linear-gradient(-180deg, #ff9000 0, #ff3500 100%);
 }
 
 .testimonials {
@@ -827,7 +830,9 @@ header {
 }
 
 .testimonial-img img {
-    margin: 0 auto 40px
+    margin: 0 auto 40px;
+    width: 100px;
+    height: 100px;
 }
 
 .testimonial-title {
