@@ -63,9 +63,9 @@ $(".switch").click(function () {
         $(".handle").css("transform","translateX(20px)");
         $(".handle").css("background-color", "yellow");
         $(".switch").css("background-color","#46A0F6");
-        $("body").css("background-color","hsla(240, 100%, 90%, 1)");
-        $(".section").css({"backgroundColor": "hsla(240, 20%, 95%, 1)", "color": "hsla(240, 90%, 25%, 1)"});
-        $("#contacts").css({"backgroundColor": "hsla(240, 20%, 95%, 1)", "color": "hsla(240, 90%, 25%, 1)"});
+        $("body").css("background-color","hsla(240, 100%, 99%, 1)");
+        $(".section").css({"backgroundColor": "hsla(240, 20%, 100%, 1)", "color": "hsla(240, 90%, 55%, 1)"});
+        $("#contacts").css({"backgroundColor": "hsla(240, 20%, 100%, 1)", "color": "hsla(240, 90%, 55%, 1)"});
         $(".circle").removeClass("selectedd");
         isOn = 0;
     }else{
