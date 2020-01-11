@@ -1,5 +1,41 @@
+.navbar-brand {
+  position: relative;
+}
+
 .header .navbar .logo {
   height: 80px;
+}
+
+.header .navbar-brand h4 {
+  position: absolute;
+  right: 90px;
+  top: 30px;
+  font-weight: bolder;
+  color: rgba(255,67,0, 1);
+}
+
+#navbar-last-child {
+  position: relative;
+  right: -24px;
+}
+
+.feature-panel {
+  margin-bottom: 30px;
+}
+
+.feature-img {
+  color: rgba(255, 255, 255, 0.90);
+  position: relative;
+}
+
+.feature-img i {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+}
+
+.price-table {
+  height: 650px;
 }
 
 .pricing-panel .pricing-heading h4 {
@@ -10,10 +46,102 @@
   line-height: 5rem;
 }
 
+#announcement {
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+  border: dashed #885bfe 5px;
+  box-shadow: 0px 0px 30px rgba(0,0,0, .3);
+}
+
+#announcement h4 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+#announcement p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+#top-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: -50px;
+  color: rgba(255,67,0, .7);
+  font-size: 50px;
+  transition: right .5s;
+}
+
+.show#top-arrow {
+  right: 15px;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-top: 120px;
+}
+.footer-logo h4 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-top: 50px;
+  color: rgba(255,67,0, 1);
+}
+
+.footer-logo p {
+  font-size: 1.3rem;
+  color: rgba(255,67,0, 1);
+}
+
+#contact {
+  text-align: right;
+}
+
+#contact p {
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
 @media(max-width: 991px) {
+  .header .navbar .container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    transition: top .6s;
+  }
+
+  .header .navbar .container.hide {
+    top: -100px;
+  }
+
+
   .header .navbar .logo {
     height: 60px;
     position: relative;
     top: -5px;
+  }
+
+  .feature-panel .feature-content ul li {
+    padding-right: 20px;
+  }
+
+  #contact {
+    margin-top: 80px;
+  }
+}
+
+@media(max-width: 450px) {
+  .header .navbar-brand h4 {
+    font-size: 2rem;
+    right: 70px;
+  }
+  .footer-menu a {
+    margin-left: 30px;
+    line-height: 50px;
   }
 }
