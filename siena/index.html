@@ -16,8 +16,10 @@
 	<link href="assets/css/external.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
 	<link href="assets/css/rtl.css" rel="stylesheet">
-	<link href="assets/css/custom.css" rel="stylesheet">
-
+    <link href="assets/css/custom.css" rel="stylesheet">
+    
+    <!-- Font Awsome -->
+    <link href="./assets/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 	<!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -38,8 +40,9 @@
 <header id="navbar-spy" class="header header-1 header-transparent header-fixed">
     <nav id="primary-menu" class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="index-2.html">
-                <img class="logo logo-dark" src="logo.png" alt="Kolaso Logo">
+            <a class="navbar-brand" href="http://negare.io/">
+                <h4>نگــــــــــــــــاره</h4>
+                <img class="logo logo-dark" src="./assets/images/logo/logo.png" alt="Kolaso Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="toogle-inner"></span>
@@ -48,9 +51,9 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="active"><a data-scroll="scrollTo" href="#hero">خانه</a></li>
                     <li><a data-scroll="scrollTo" href="#pricing">قیمت‌ها</a></li>
-                    <li><a href="#" target="_blank">سوالات متداول</a></li>
                     <li><a href="#" target="_blank">وبلاگ</a></li>
-                    <li><a data-scroll="scrollTo" href="#cta">تماس با ما</a></li>
+                    <li><a href="#" target="_blank">سوالات متداول</a></li>
+                    <li id="navbar-last-child"><a data-scroll="scrollTo" href="#contact">تماس با ما</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -63,7 +66,7 @@
     <div class="container">
         <div class="row row-content">
             <div class="col-12 col-md-12 col-lg-6">
-                <div class="hero-headline">سرویس جستجوی هوشمند نگاره</div>
+                <div class="hero-headline">جستجوی هوشمند نگاره</div>
                 <div class="hero-bio">با استفاده از سرویس جستجوی هوشمند نگاره، شما می‌توانید یک موتور جستجوی اختصاصی و پیشرفته با سرعت و دقت بالا برای محتوای سایت یا اپلیکیشن خود داشته باشید، آن هم بدون اینکه خودتان را درگیر پیچیدگی های فنی ساخت آن کنید.</div>
                 <div class="hero-action">
                     <a href="#pricing" class="btn btn--gradient" data-scroll="scrollTo">شروع کنید</a>
@@ -101,9 +104,9 @@
 			<!-- Panel #1 -->
 			<div class="col-12 col-md-4 col-lg-4">
 				<div class="feature-panel">
-					<div class="feature-img bg-blue">
-						<img src="assets/images/features/champion.svg" alt="target">
-					</div>
+					<div class="feature-img bg-blue fa-3x">
+                        <i class="fas fa-spell-check"></i>		
+                    </div>
 					<div class="feature-content">
 						<h3>تشخیص غلط‌ املایی</h3>
 						<p>تشخیص خودکار خطاهای تایپی و غلط املایی و نمایش نتایج درست</p>
@@ -116,8 +119,8 @@
 			<!-- Panel #2 -->
 			<div class="col-12 col-md-4 col-lg-4">
 				<div class="feature-panel">
-					<div class="feature-img bg-green">
-						<img src="assets/images/features/team.svg" alt="users">
+					<div class="feature-img bg-green fa-3x">
+                        <i class="fas fa-search-plus"></i>
 					</div>
 					<div class="feature-content">
 						<h3>نمایش لحظه‌ای نتایج</h3>
@@ -131,11 +134,11 @@
 			<!-- Panel #3 -->
 			<div class="col-12 col-md-4 col-lg-4">
 				<div class="feature-panel">
-					<div class="feature-img bg-orange">
-						<img src="assets/images/features/chart.svg" alt="chart">
+					<div class="feature-img bg-orange fa-3x">
+                        <i class="fas fa-lightbulb"></i>
 					</div>
 					<div class="feature-content">
-						<h3>پیشنهاد کلیدواژه در لحظه</h3>
+						<h3>پیشنهاد خودکار کلیدواژه</h3>
 						<p>پیشنهاد کلیدواژه‌های مرتبط به کاربر در حین تایپ کردن</p>
 					</div>
 				</div>
@@ -146,8 +149,8 @@
 			<!-- Panel #4 -->
 			<div class="col-12 col-md-4 col-lg-4">
 				<div class="feature-panel">
-					<div class="feature-img bg-orange">
-						<img src="assets/images/features/chart.svg" alt="chart">
+					<div class="feature-img bg-blue fa-3x">
+                        <i class="fas fa-chart-bar"></i>
 					</div>
 					<div class="feature-content">
 						<h3>ارائه گزارش‌های تحلیلی</h3>
@@ -161,8 +164,8 @@
 			<!-- Panel #5 -->
 			<div class="col-12 col-md-4 col-lg-4">
 				<div class="feature-panel">
-					<div class="feature-img bg-orange">
-						<img src="assets/images/features/chart.svg" alt="chart">
+					<div class="feature-img bg-green fa-3x">
+                        <i class="fas fa-filter"></i>
 					</div>
 					<div class="feature-content">
 						<h3>اعمال فیلتر برای جستجو</h3>
@@ -176,11 +179,11 @@
 			<!-- Panel #6 -->
 			<div class="col-12 col-md-4 col-lg-4">
 				<div class="feature-panel">
-					<div class="feature-img bg-orange">
-						<img src="assets/images/features/chart.svg" alt="chart">
+					<div class="feature-img bg-orange fa-3x">
+                        <i class="fas fa-cut"></i>
 					</div>
 					<div class="feature-content">
-						<h3>امکان سفارشی سازی نتایج</h3>
+						<h3>سفارشی سازی نتایج</h3>
 						<p>امکان نمایش تبلیغات در جستجو، اولویت دادن به محصولات و محتوای به خصوص، و ...</p>
 					</div>
 				</div>
@@ -229,8 +232,8 @@
                         <p>استفاده از سرویس جستجوی هوشمند نگاره باعث می‌شود که کاربرانتان به راحتی چیزی را که به دنبال آن هستند بیابند، و در نتیجه:</p>
                         <ul>
                             <li>میزان درآمد و فروش شما را افزایش می‌دهد</li>
-                            <li>نرخ ریزش شما را کم می‌کند</li>
                             <li>تجربه کاربری را بهبود می‌بخشد</li>
+                            <li>نرخ ریزش شما را کم می‌کند</li>
                         </ul>
                     </div>
                 </div>
@@ -379,8 +382,8 @@
                     <!--  Pricing body  -->
                     <div class="pricing-body">
                         <ul class="list-unstyled">
-                            <li>۵۰۰,۰۰۰ API call</li>
-                            <li>حداکثر ۱۰۰ هزار داده</li>
+                            <li>۱۰۰,۰۰۰ API call</li>
+                            <li>حداکثر ۱۰ هزار داده</li>
                             <li>پیشنهاد لحظه‌ای کلیدواژه</li>
                             <li>امکان تعریف فیلتر برای نتایج</li>
                             <li>ارائه آمار و گزارش‌های تحلیلی</li>
@@ -389,8 +392,7 @@
                     </div>
                     <!--  Pricing Body  -->
                     <div class="pricing-footer">
-                        <a class="btn btn--primary btn--bordered" href="#">سفارش محصول</a>
-                        <p>شما می‌توانید ۳۰ روز رایگان از سرویس‌های ما استفاده نمایید</p>
+                        <a class="btn btn--primary btn--bordered" href="#">شروع کنید</a>
                     </div>
                 </div>
             </div>
@@ -412,7 +414,7 @@
                     <div class="pricing-body">
                         <ul class="list-unstyled">
                             <li>۵۰۰,۰۰۰ API call</li>
-                            <li>حداکثر ۱۰۰ هزار داده</li>
+                            <li>حداکثر ۵۰ هزار داده</li>
                             <li>پیشنهاد لحظه‌ای کلیدواژه</li>
                             <li>امکان تعریف فیلتر برای نتایج</li>
                             <li>ارائه آمار و گزارش‌های تحلیلی</li>
@@ -421,8 +423,7 @@
                     </div>
                     <!--  Pricing Body  -->
                     <div class="pricing-footer">
-                        <a class="btn btn--gradient" href="#">سفارش محصول</a>
-                        <p>شما می‌توانید ۳۰ روز رایگان از سرویس‌های ما استفاده نمایید</p>
+                        <a class="btn btn--gradient" href="#">شروع کنید</a>
                     </div>
                 </div>
             </div>
@@ -434,83 +435,76 @@
                 <div class="pricing-panel">
                     <!--  Pricing heading  -->
                     <div class="pricing-heading text--center">
-                        <h4 class="reveal">سفارشی</h4>
-                            <p class="pricing-yealry">۱۶,۵۰۰,۰۰۰ <span class="currency">ت</span><span class="period">متناسب با نیاز شما</span></p>
+                        <h4>سفارشی</h4>
+                            <p class="pricing-yealry"><span class="period">بسته به نیاز شما</span></p>
                     </div>
                     <!--  Pricing body  -->
                     <div class="pricing-body">
                         <ul class="list-unstyled">
-                            <li>۵۰۰,۰۰۰ API call</li>
-                            <li>حداکثر ۱۰۰ هزار داده</li>
-                            <li>پیشنهاد لحظه‌ای کلیدواژه</li>
-                            <li>امکان تعریف فیلتر برای نتایج</li>
-                            <li>ارائه آمار و گزارش‌های تحلیلی</li>
-                            <li>امکان سفارشی سازی نتایج</li>
+                            <li>نامحدود API call</li>
+                            <li>بینهایت داده</li>
+                            <li>کلیه امکانات پنل حرفه‌ای</li>
+                            <li>امکان اضافه کردن قابلیت‌های سفارشی برای کسب وکارهای بزرگ</li>
                         </ul>
                     </div>
+                    
                     <!--  Pricing Body  -->
                     <div class="pricing-footer">
-                        <a class="btn btn--primary btn--bordered" href="#">سفارش محصول</a>
-                        <p>شما می‌توانید ۳۰ روز رایگان از سرویس‌های ما استفاده نمایید</p>
+                        <a class="btn btn--primary btn--bordered" href="#">سفارش دهید</a>
                     </div>
                 </div>
             </div>
             <!-- .pricing-table End -->
         </div>
         <!-- .row end -->
+        <div id="announcement" class="reveal">
+            <h4>قابل توجه استارت‌آپ‌ها</h4>
+            <p>تیم نگاره به عنوان عضو کوچکی از خانواده استارت‌آپی کشور، حمایت از کسب و کارهای نوپای دیگر را وظیفه خود می‌داند. کسب‌وکارهای نوپا و استارت‌آپ‌هایی که تمایل به استفاده از سرویس جستجوی هوشمند نگاره را دارند، می‌توانند با ما تماس بگیرند و از تخفیف‌های ویژه‌ای که برای آن‌ها در نظر گرفته شده استفاده کنند.
+            </p>
+        </div>
     </div>
     <!-- .container end -->
 </section><!-- Footer
 ============================================= -->
+
 <footer id="footer" class="footer">
 	<div class="footer-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-12 col-lg-4">
-					<div class="footer-logo">
-						<img src="assets/images/logo/logo.png" alt="Siena Logo">
-					</div>
-				</div>
-				<div class="col-12 col-md-12 col-lg-8">
+                <div class="col-12 col-md-12 col-lg-6 order-lg-2">
 					<div class="footer-menu">
-						<a href="#">صفحه نخست</a>
-						<a href="#">ویژگی ها</a>
-						<a href="#">خدمات ما</a>
-						<a href="#">دیدگاه کاربران</a>
-						<a href="#">تعرفه ها</a>
-						<a href="#">تماس با ما</a>
+						<a data-scroll="scrollTo" href="#hero">خانه</a>
+                        <a data-scroll="scrollTo" href="#pricing">قیمت‌ها</a>
+						<a href="#">مشاهده دمو</a>
+						<a href="#">وبلاگ</a>
+						<a href="#">سوالات متداول</a>
 					</div>
-				</div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 order-lg-1">
+					<div id="contact" class="footer-info">
+                        <h4>تماس با ما:</h4>
+						<p><a href="mailto:contact@negare.io"><i class="fas fa-envelope fa-lg"></i> contact@Negare.io</a></p>
+                        <p><a href="https://wa.me/989028025051"><i class="fab fa-whatsapp-square fa-lg"></i> پیامرسان واتساپ </a></p>
+                        <p><a href="tel:+989000000000"><i class="fas fa-phone-square fa-lg"></i> ۰۹۰۲۸۰۲۵۰۵۱ </a></p>
+					</div>
+                </div>
 			</div><!-- .row end -->
 			<div class="row">
-				<div class="col-12 col-md-12 col-lg-6">
-					<div class="footer-info">
-						<p><a href="http://demo.redgraphic.ir/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dfacaaafafb0adab9fbbb0b2beb6b1f1bcb0b2">[email&#160;protected]</a></p>
-						<p>۰۲۱-۲۳۴۵-۶۷۸۹</p>
-					</div>
-				</div>
-				<div class="col-12 col-md-12 col-lg-6">
-					<div class="footer-social">
-						<a class="twitter" href="#">
-							<i class="fa fa-twitter"></i>
-						</a>
-						<a class="facebook" href="#">
-							<i class="fa fa-facebook"></i>
-						</a>
-						<a class="dribbble" href="#">
-							<i class="fa fa-paper-plane"></i>
-						</a>
-						<a class="google" href="#">
-							<i class="fa fa-google-plus"></i>
-						</a>
+				<div class="col-12">
+					<div class="footer-logo">
+                        <img src="assets/images/logo/logo.png" alt="Siena Logo">
+                        <h4>نگــــــــــــــــاره؛</h4>
+                        <p>راه‌حل‌های هوشمند برای کسب و کارهای آنلاین</p>
 					</div>
 				</div>
 			</div>
 			<!-- .row end -->
 		</div>
 		<!-- .container end -->
-	</div>
-	
+    </div>
+    <!-- Go to Top Arrow -->
+    <a data-scroll="scrollTo" href="#hero" id="top-arrow"><i class="fas fa-arrow-alt-circle-up"></i></a>
+
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="row">
@@ -519,7 +513,7 @@
 				</div>
 				<div class="col-12 col-md-12 col-lg-12">
 					<div class="footer-copyright">
-						<span>تمامی حقوق این وب‌سایت محفوظ می‌باشد.</span>
+						<span>تمامی حقوق این وب‌سایت برای تیم نگاره محفوظ است.</span>
 					</div>
 				</div>
 			</div>
@@ -533,7 +527,8 @@
 
 	<!-- Footer Scripts
 	============================================= -->
-	<script data-cfasync="false" src="http://demo.redgraphic.ir/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- <script data-cfasync="false" src="http://demo.redgraphic.ir/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/plugins.js"></script>
 	<script src="assets/js/functions.js"></script>
 </body>
