@@ -1,0 +1,19 @@
+.header .navbar .logo {
+  height: 80px;
+}
+
+.pricing-panel .pricing-heading h4 {
+  font-size: 4rem;
+}
+.pricing-panel .pricing-heading p {
+  font-size: 2rem;
+  line-height: 5rem;
+}
+
+@media(max-width: 991px) {
+  .header .navbar .logo {
+    height: 60px;
+    position: relative;
+    top: -5px;
+  }
+}

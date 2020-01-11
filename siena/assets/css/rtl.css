@@ -1,0 +1,62 @@
+/*
+Theme Name: Siena
+Author: RedGraphic
+Author URI: http://www.RedGraphic.ir
+Version: 1.0
+*/
+
+@font-face{
+    font-family:yekan;
+    font-style:normal;
+    font-weight:bold;
+    src:url('../fonts/iranyekanwebbold.eot');
+    src:url('../fonts/iranyekanwebbold-.eot#iefix') format('embedded-opentype'), url('../fonts/iranyekanwebbold.woff2') format('woff2'), url('../fonts/iranyekanwebbold.woff') format('woff'), url('../fonts/iranyekanwebbold.ttf') format('truetype')
+}
+@font-face{
+    font-family:yekan;
+    font-style:normal;
+    font-weight:normal;
+    src:url('../fonts/iranyekanwebregular.eot');
+    src:url('../fonts/iranyekanwebregular-.eot#iefix') format('embedded-opentype'), url('../fonts/iranyekanwebregular.woff2') format('woff2'), url('../fonts/iranyekanwebregular.woff') format('woff'), url('../fonts/iranyekanwebregular.ttf') format('truetype')
+}
+@font-face{
+    font-family:yekan;
+    font-style:normal;
+    font-weight:300;
+    src:url('../fonts/iranyekanweblight.eot');
+    src:url('../fonts/iranyekanweblight-.eot#iefix') format('embedded-opentype'), url('../fonts/iranyekanweblight.woff2') format('woff2'), url('../fonts/iranyekanweblight.woff') format('woff'), url('../fonts/iranyekanweblight.ttf') format('truetype')
+}
+
+body{direction:rtl;font-family:yekan,tahoma;text-align:right;}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,.hero .hero-bio,.btn,.heading .heading-title,.form-control{font-family:yekan,tahoma;}
+.navbar-nav > li:last-child{margin-right:50px;}
+.hero{background-size:cover;background-position:top right;}
+.hero-img img{transform: scaleX(-1);}
+.feature-2 img{transform: scaleX(-1);}
+.video-button{margin-right:30px;margin-left:0;}
+.feature-panel .feature-content ul li:before{left:auto;right:0;}
+.feature-panel .feature-content ul li{padding-left:0;padding-right:30px;}
+.list-unstyled{padding-right:0;}
+footer .footer-top .footer-menu{text-align:left;}
+footer .footer-top .footer-social{text-align:left;}
+footer .footer-top .footer-social a:last-of-type{margin-right:20px;}
+footer .footer-top .footer-menu a:first-of-type {margin-right: 0;}
+footer .footer-top .footer-menu a:last-of-type {margin-right: 30px;}
+.hero-action form .form-control{margin-right:0;margin-left:30px;}
+
+@media only screen and (max-width: 991px){
+.hero .hero-headline {font-size:25px;}
+.navbar-toggler{right:auto;left:15px;}
+.feature-panel .feature-content ul li{padding-right:0;}
+footer .footer-top .footer-menu{text-align:center;}
+footer .footer-top .footer-menu a:first-of-type {margin-right: 0;}
+footer .footer-top .footer-menu a:last-of-type {margin-right: 15px;}
+footer .footer-top .footer-social{text-align:center;}
+}
+@media only screen and (max-width: 767px){
+.hero .hero-action .video-button {
+    margin-right: 0;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+.feature-panel .feature-content ul li:before, .feature-left .feature-panel .feature-content ul li:before {padding-right: 0;padding-left: 10px;}
+}
