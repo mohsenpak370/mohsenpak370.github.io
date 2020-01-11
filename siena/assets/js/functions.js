@@ -13,6 +13,30 @@
 (function ($) {
     "use strict";
 
+    let startPos = window.pageYOffset;
+
+
+    window.addEventListener('scroll', () => {
+
+        let currentPos = window.pageYOffset;
+
+        if (currentPos > startPos) {
+            document.querySelector('.header .navbar .container').classList.add('hide');
+        } else {
+            document.querySelector('.header .navbar .container').classList.remove('hide');
+        }
+
+        startPos = currentPos;
+
+        if(currentPos > 150) {
+            document.querySelector('#top-arrow').classList.add('show');
+        } else {
+            document.querySelector('#top-arrow').classList.remove('show');
+        }
+    })
+    
+    
+
     /* ------------------  Background INSERT ------------------ */
 
     var $bgSection = $(".bg-section");
